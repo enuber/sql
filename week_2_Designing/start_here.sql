@@ -1,0 +1,65 @@
+-- SQLite command... .schema this will show the below for the longlist in week 0
+-- note that REAL is floating point or decimal values 
+-- CREATE TABLE IF NOT EXISTS "longlist" (
+--     "isbn" TEXT,
+--     "title" TEXT,
+--     "author" TEXT,
+--     "translator" TEXT,
+--     "format" TEXT,
+--     "pages" INTEGER,
+--     "publisher" TEXT,
+--     "published" TEXT,
+--     "year" INTEGER,
+--     "votes" INTEGER,
+--     "rating" REAL
+-- );
+
+-- .schema for week 1 longlist
+-- NOTE .schema <tablename> - will give just schema for just one of the tables below
+
+-- CREATE TABLE IF NOT EXISTS "authors" (
+--     "id" INTEGER,
+--     "name" TEXT,
+--     "country" TEXT,
+--     "birth" INTEGER,
+--     PRIMARY KEY("id")
+-- );
+-- CREATE TABLE IF NOT EXISTS "authored" (
+--     "author_id" INTEGER,
+--     "book_id" INTEGER,
+--     FOREIGN KEY("author_id") REFERENCES "authors"("id"),
+--     FOREIGN KEY("book_id") REFERENCES "books"("id")
+-- );
+-- CREATE TABLE IF NOT EXISTS "books" (
+--     "id" INTEGER,
+--     "isbn" TEXT,
+--     "title" TEXT,
+--     "publisher_id" INTEGER,
+--     "format" TEXT,
+--     "pages" INTEGER,
+--     "published" TEXT,
+--     "year" INTEGER,
+--     PRIMARY KEY("id"),
+--     FOREIGN KEY("publisher_id") REFERENCES "publishers"("id")
+-- );
+-- CREATE TABLE IF NOT EXISTS "publishers" (
+--     "id" INTEGER,
+--     "publisher" TEXT,
+--     PRIMARY KEY("id")
+-- );
+-- CREATE TABLE IF NOT EXISTS "ratings" (
+--     "book_id" INTEGER,
+--     "rating" INTEGER,
+--     FOREIGN KEY("book_id") REFERENCES "books"("id")
+-- );
+-- CREATE TABLE IF NOT EXISTS "translators" (
+--     "id" INTEGER,
+--     "name" TEXT,
+--     PRIMARY KEY("id")
+-- );
+-- CREATE TABLE IF NOT EXISTS "translated" (
+--     "translator_id" INTEGER,
+--     "book_id" INTEGER,
+--     FOREIGN KEY("translator_id") REFERENCES "translators"("id"),
+--     FOREIGN KEY("book_id") REFERENCES "books"("id")
+-- );
