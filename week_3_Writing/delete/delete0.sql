@@ -1,3 +1,5 @@
+--  DELETE FROM <table> WHERE <condition>
+
 -- Demonstrates deleting rows from a single table
 -- Uses mfa.db
 
@@ -8,4 +10,5 @@ DELETE FROM "collections" WHERE "title" = 'Spring outing';
 DELETE FROM "collections" WHERE "acquired" IS NULL;
 
 -- Deletes items acquired before the museum moved to a new location in 1909
+-- notice that this removes multiple rows.
 DELETE FROM "collections" WHERE "acquired" < '1909-01-01';

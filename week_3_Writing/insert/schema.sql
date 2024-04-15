@@ -1,3 +1,8 @@
+-- START HERE - there is no schema when we do sqlite3 mfa.db
+-- .read <filename>.sql - will add the schema to the database
+-- after doing this then go to insert0.sql file.
+
+
 -- Demonstrates schema of mfa.db for insert files
 -- Creates mfa.db
 

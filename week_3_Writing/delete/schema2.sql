@@ -35,6 +35,7 @@ VALUES
 ('Unidentified artist'),
 ('Zhou Chen');
 
+-- NOTE the change to ON DELETE CASCADE in the foreign keys.
 CREATE TABLE "created" IF NOT EXISTS (
     "artist_id" INTEGER,
     "collection_id" INTEGER,

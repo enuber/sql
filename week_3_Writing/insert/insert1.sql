@@ -1,7 +1,11 @@
+-- FINAL file in this series...start with SCHEMA then INSERT0 files
+
+
 -- Demonstrates adding multiple rows to a table
 -- Uses mfa.db
 
 -- Adds a set of new items to the collection
+-- allows you to add in multiple rows that are comma separated. 
 INSERT INTO "collections" ("title", "accession_number", "acquired") 
 VALUES 
 ('Imaginative landscape', '56.496', NULL),
