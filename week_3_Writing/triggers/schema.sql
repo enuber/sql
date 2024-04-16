@@ -6,7 +6,7 @@ DROP TABLE IF EXISTS "collections";
 DROP TABLE IF EXISTS "artists";
 DROP TABLE IF EXISTS "created";
 
-CREATE TABLE "collections" IF NOT EXISTS (
+CREATE TABLE "collections" (
     "id" INTEGER,
     "title" TEXT NOT NULL,
     "accession_number" TEXT NOT NULL UNIQUE,
