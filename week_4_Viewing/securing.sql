@@ -1,3 +1,11 @@
+-- Part 4
+-- Some columns may not be shared with anyone else. Common pracitce in security is to only give someone the information they need to know. Views allow you to reduce the number of columns someone might see.
+
+-- PII / GDPR - personal identifiable information. 
+
+-- in a ride sharing database "riders" would be considered PII as it has the name of person that took the ride. 
+
+
 -- Demonstrates views for securing data
 -- Uses rideshare.db
 

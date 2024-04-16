@@ -7,6 +7,8 @@
 -- CREATE VIEW <name> AS
 -- SELECT...; - lets us create a view that uses a query and will store the info into <name> and is apart of the schema.
 
+-- Can't modify a view because its a combination of data from underlying tables. it is assembling data from other parts of the database and putting them into a single view. so you can't update that data because the pieces are in multiple individual tables found in the database. Should update the underlying table which you can do with update and set.  
+
 -- Demonstrates views for simplifying data access
 -- Uses longlist.db
 
