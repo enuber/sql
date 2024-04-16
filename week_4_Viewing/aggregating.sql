@@ -1,3 +1,6 @@
+-- PART 2
+-- Aggregating - find AVG, MIN, MAX inside a view. 
+
 -- Demonstrates views for aggregating data
 -- Uses longlist.db
 
