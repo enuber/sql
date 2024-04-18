@@ -1,3 +1,5 @@
+-- Part 3 - just showing schema didn't do anything here.
+
 -- Demonstrates schema for MySQL `mfa` database
 
 CREATE DATABASE IF NOT EXISTS `mfa`;

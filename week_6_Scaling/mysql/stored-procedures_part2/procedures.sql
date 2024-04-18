@@ -1,7 +1,19 @@
+-- Part 4 - 
+
+-- Stored procedure - call to find all the items marked as not deleted
+
+-- CREATE PROCEDURE <name>
+-- BEGIN
+-- statements to run
+-- END;
+
+-- CALL <name> - calls the procedure when needed to run.
+
 -- Demonstrates stored procedures
 -- Uses `mfa` database
 
 -- Sets up database
+-- do this once the database has been set up from the schema.
 USE `mfa`;
 
 -- Adds deleted column to columns
@@ -9,6 +21,8 @@ ALTER TABLE `collections`
 ADD COLUMN `deleted` TINYINT DEFAULT 0;
 
 -- Creates a stored procedure to view all (non-deleted) items in collections
+-- delimter // - happens first because the semi-colon in the select statement may prematurally cause the procedure to end. So we use a different kind of notation to mark the end. In this case // when we want to go back to a semi-colon marking the end we have to call delimiter ; to mark we are back to ; ending statements instead of //
+
 delimiter //
 CREATE PROCEDURE `current_collections`()
 BEGIN
@@ -35,6 +49,9 @@ CREATE TABLE `transactions` (
 );
 
 -- Creates a stored procedure with a parameter to mark artwork sold
+-- adding input to the function. Here we are using the id of the artwork being sold. 
+-- IN - input and then include the type
+
 delimiter //
 CREATE PROCEDURE `sell`(IN `sold_id` INT)
 BEGIN
@@ -70,3 +87,6 @@ IF `sold_id` IN (
 END IF;
 END//
 delimiter ;
+
+
+-- Procedures... - can use condtionals and loops as well.

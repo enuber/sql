@@ -1,3 +1,6 @@
+-- PART 2 from this folder
+-- Root user has to grant permissions to someone so they can see the databases. Note that in this way you can also hide columns of PII and give them access to views 
+
 -- Demonstrates granting and revoking privileges
 
 -- As Carter, try show databases

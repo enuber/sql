@@ -9,7 +9,21 @@
 -- -h is the host followed by the IP address. 127.0.0.1 is the local host (ie home computer)
 -- -P is the the port followed by the port address.
 -- -p is password and is lower case. 
--- mysql -u
+-- mysql -u root -p
+
+-- if using SQL TOOLs...below info is for that.
+-- in vs code make sure when you add the port you add the extra 0 so instead of 3306 should be 33060
+-- password mode choose save as plaintext in setting and then enter the password.
+-- authenictaion protocol choose xprotocol
+-- conection time out = 30
+-- the database needs to already exist
+-- ___________________________
+
+-- installed mysql into the command line so can just run
+-- mysql -u root -p
+
+-- my password is 87FE&te32
+
 
 
 -- Demonstrates navigating a MySQL database
